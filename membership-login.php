@@ -21,9 +21,8 @@
         background-color: white;
     }
 
-    .header-2 {
-        height: 10vh;
-        width: 100vw;
+    header {
+       
         border-bottom: 1px solid #e6e6e6;
     }
 
@@ -50,13 +49,14 @@
         height: 2.5rem;
     }
 
-    form {
-        padding: 20px 35%;
+    .regFormContaine{
+        margin: 0 auto;
+    max-width: 440px;
+    text-align: left;
     }
 
     .content {
-        display: grid;
-        padding: 10px 35%;
+       padding-bottom: 95px;
     }
 
     .stepHeader {
@@ -69,7 +69,7 @@
     }
 
     .btn {
-        padding: 10px 205px;
+        padding: 10px 200px;
     }
 
     .fgt-pass {
@@ -79,19 +79,74 @@
     .fgt-pass a {
         text-decoration: none;
     }
+    footer a {
+    color: black;
+}
+footer li{
+    margin: 10px 0px;
+}
+footer li a{
+    text-decoration: none;
+    color: #737373;
+}
+.ques{
+    padding: 0px 7%;
+}
+.firstload{
+    --layout-container-side-padding: 32px;
+    padding: 20px 32px 60px;
+    padding: 20px var(--layout-container-side-padding) 60px;
+}
+@media only screen and (max-width: 531px){
+    .btn{
+        padding: 10px 183px;
+   
+    }
+}
+@media only screen and (max-width: 531px){
+    nav{
+padding: 10px 15px;
+    }
+}
+@media only screen and (max-width: 531px){
+.logo {
+    width: 4.25rem;
+    height: 1.3rem;
+}
+}
+@media only screen and (max-width: 531px){
+nav a {
+   font-size: 15px;
+}
+}
+@media only screen and (max-width: 770px){
+.row>* {
+    width: 33%;
+}
+}
+@media only screen and (max-width: 770px){
+footer a {
+    font-size: 13px;
+}
+}
+
 </style>
 
 <body>
-    <div class="header-2">
+<header>
         <nav>
-            <img src="logo.png" class="logo">
+            <img src="images/logo.png" class="logo">
             <div>
                 <a href="#">Sign in</a>
             </div>
         </nav>
-    </div>
+</header>
     <div class="content">
-        <div class="stepHeader">
+       <div class="firstload">
+   
+    <form action="action.php" method="post">
+        <div class="regFormContaine">
+    <div class="stepHeader">
             <p>STEP 1 OF 3</p>
         </div>
         <div class="stepHeader-container">
@@ -101,8 +156,6 @@
         <div class="contextRow">
             <span>Enter your password and you'll be watching in no time.</span>
         </div>
-    </div>
-    <form action="action.php" method="post">
         <div class="mb-3">
             <?php
             // Retrieve the email from the previous page
@@ -122,7 +175,59 @@
             <a href="#">Forgot your password?</a>
         </div>
         <button type="submit" class="btn btn-danger">NEXT</button>
+        </div>
     </form>
+    </div>
+    </div>
+    <footer class="mt-5" style="background-color: #f3f3f3">
+        <div class="ques">
+            <p style=" color: #737373;">Questions? <a href="#" type="tel" style=" color: #737373;">Call 000-800-100-8343</a></p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+
+                    <ul class="list-unstyled">
+                        <li><a href="#">FAQ</a></li>
+                       
+                        <li><a href="#">Privacy</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-3">
+
+                    <ul class="list-unstyled">
+                        <li><a href="#">Help Centre</a></li>
+                       
+                        <li><a href="#">Cookie Preferences</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="col-md-3">
+
+                    <ul class="list-unstyled">
+                        <li><a href="#">Netflix</a></li>
+                       
+                        <li><a href="#">Corporate Information</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-3">
+
+                    <ul class="list-unstyled">
+                       
+                        <li><a href="#">Terms of Use</a></li>
+                       
+                    </ul>
+                </div>
+                
+            </div>
+            
+            <button type="button" class="btn btn-dark" style="padding: 10px;">English <img src="images/down-icon.png"
+                    alt="" style="width: 10px;"></button>
+            
+        </div>
+    </footer>
 </body>
 
 </html>
