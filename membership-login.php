@@ -84,7 +84,7 @@
 <body>
     <div class="header-2">
         <nav>
-            <img src="images/logo.png" class="logo">
+            <img src="logo.png" class="logo">
             <div>
                 <a href="#">Sign in</a>
             </div>
