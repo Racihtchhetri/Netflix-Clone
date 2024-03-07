@@ -144,7 +144,7 @@ footer a {
     <div class="content">
        <div class="firstload">
    
-    <form action="action.php" method="post">
+    <form action="action.php" method="get">
         <div class="regFormContaine">
     <div class="stepHeader">
             <p>STEP 1 OF 3</p>
